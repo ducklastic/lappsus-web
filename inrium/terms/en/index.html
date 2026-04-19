@@ -5,57 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms of Use — Inrium</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 680px; margin: 60px auto; padding: 0 24px; color: #1d1d1f; line-height: 1.6; }
-    h1 { font-size: 2rem; font-weight: 700; }
-    h2 { font-size: 1.2rem; font-weight: 600; margin-top: 2rem; }
-    .meta { color: #6e6e73; font-size: 0.9rem; margin-bottom: 2rem; }
-    .lang { font-size: 0.85rem; margin-bottom: 2rem; }
-    .lang a { color: #0071e3; text-decoration: none; margin-right: 12px; }
-    .disclaimer { background: #fff3cd; border-left: 4px solid #f0ad00; padding: 16px 20px; border-radius: 4px; margin: 2rem 0; }
-    footer { margin-top: 3rem; font-size: 0.85rem; color: #6e6e73; border-top: 1px solid #e0e0e0; padding-top: 1rem; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: #0d0d0d;
+      background: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header { border-bottom: 1px solid #e8e8e8; padding: 24px 40px; }
+    .logo { font-size: 20px; font-weight: 300; letter-spacing: -0.5px; color: #000; text-decoration: none; }
+    .logo::before { content: "["; }
+    .logo::after { content: "]"; }
+    main { max-width: 680px; margin: 60px auto; padding: 0 24px; flex: 1; line-height: 1.7; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    h2 { font-size: 15px; font-weight: 700; margin-top: 32px; margin-bottom: 8px; }
+    p { font-size: 13px; margin-bottom: 12px; }
+    .meta { color: #999; font-size: 11px; margin-bottom: 32px; }
+    .lang { font-size: 11px; margin-bottom: 24px; display: flex; gap: 12px; }
+    .lang a { color: #ff8012; text-decoration: none; }
+    .lang a:hover { text-decoration: underline; }
+    a { color: #ff8012; }
+    .disclaimer {
+      background: #fff5e6;
+      border-left: 3px solid #ff8012;
+      padding: 16px 20px;
+      margin: 24px 0 32px;
+      font-size: 13px;
+    }
+    footer { border-top: 1px solid #e8e8e8; padding: 20px 40px; font-size: 11px; color: #999; margin-top: 60px; }
+    footer a { color: #ff8012; text-decoration: none; }
   </style>
 </head>
 <body>
-  <div class="lang">
-    <a href="/inrium/terms/ca">Català</a>
-    <a href="/inrium/terms/es">Español</a>
-    <a href="/inrium/terms/en">English</a>
-  </div>
+  <header>
+    <a href="/" class="logo">lappsus</a>
+  </header>
+  <main>
+    <div class="lang">
+      <a href="/inrium/terms/ca">Català</a>
+      <a href="/inrium/terms/es">Español</a>
+      <a href="/inrium/terms/en">English</a>
+    </div>
 
-  <h1>Terms of Use</h1>
-  <p class="meta">Inrium · Lappsus · Last updated: April 2026</p>
+    <h1>Terms of Use</h1>
+    <p class="meta">Inrium · Last updated: April 2026</p>
 
-  <div class="disclaimer">
-    <strong>Important notice:</strong> Inrium is a personal tracking aid for oral anticoagulant therapy. <strong>It is not a certified medical device and does not replace the judgment of your doctor or hematologist.</strong> All treatment decisions must always be made by your healthcare professional.
-  </div>
+    <div class="disclaimer">
+      <strong>Important notice:</strong> Inrium is a personal tracking aid for oral anticoagulant therapy. <strong>It is not a certified medical device and does not replace the judgment of your doctor or hematologist.</strong> All treatment decisions must always be made by your healthcare professional.
+    </div>
 
-  <h2>Acceptance of terms</h2>
-  <p>By downloading or using Inrium, you agree to these terms of use. If you do not agree, do not use the app.</p>
+    <h2>Acceptance of terms</h2>
+    <p>By downloading or using Inrium, you agree to these terms of use. If you do not agree, do not use the app.</p>
 
-  <h2>Permitted use</h2>
-  <p>Inrium is designed to help you personally track your oral anticoagulant therapy (OAT/Sintrom): importing and reviewing your TAO sheets, remembering your daily dose, and consulting your INR history. The app is for personal, non-commercial use.</p>
+    <h2>Permitted use</h2>
+    <p>Inrium is designed to help you personally track your oral anticoagulant therapy (OAT/Sintrom): importing and reviewing your TAO sheets, remembering your daily dose, and consulting your INR history. The app is for personal, non-commercial use.</p>
 
-  <h2>Medical liability limitation</h2>
-  <p>Information displayed by Inrium (doses, INR values, statistics, reminders) is for informational purposes only and <strong>does not constitute medical advice</strong>. Lappsus is not responsible for any medical decisions made based on information from the app. If in doubt about your treatment, always consult your doctor.</p>
+    <h2>Medical liability limitation</h2>
+    <p>Information displayed by Inrium (doses, INR values, statistics, reminders) is for informational purposes only and <strong>does not constitute medical advice</strong>. Lappsus is not responsible for any medical decisions made based on information from the app. If in doubt about your treatment, always consult your doctor.</p>
 
-  <h2>Data accuracy</h2>
-  <p>Inrium's OCR parser attempts to extract data from your TAO sheet with maximum accuracy, but may make mistakes. <strong>Always review the extracted data</strong> before confirming it. Lappsus is not responsible for extraction errors that you have not reviewed and corrected.</p>
+    <h2>Data accuracy</h2>
+    <p>Inrium's OCR parser attempts to extract data from your TAO sheet with maximum accuracy, but may make mistakes. <strong>Always review the extracted data</strong> before confirming it. Lappsus is not responsible for extraction errors that you have not reviewed and corrected.</p>
 
-  <h2>Inrium+ subscription</h2>
-  <p>Inrium offers an optional subscription (Inrium+) with additional features. Subscription terms, pricing, and renewal management are governed by Apple App Store rules. You may cancel at any time from your Apple ID settings.</p>
+    <h2>Inrium+ subscription</h2>
+    <p>Inrium offers an optional subscription (Inrium+) with additional features. Subscription terms, pricing, and renewal management are governed by Apple App Store rules. You may cancel at any time from your Apple ID settings.</p>
 
-  <h2>Intellectual property</h2>
-  <p>Inrium and all its contents (code, design, text, icons) are the property of Lappsus. You may not copy, modify, distribute, or reverse-engineer the app without express authorization.</p>
+    <h2>Intellectual property</h2>
+    <p>Inrium and all its contents (code, design, text, icons) are the property of Didac Morales · Lappsus. You may not copy, modify, distribute, or reverse-engineer the app without express authorization.</p>
 
-  <h2>Changes to terms</h2>
-  <p>Lappsus reserves the right to modify these terms. Significant changes will be communicated within the app. Continued use of the app after changes implies acceptance of the new terms.</p>
+    <h2>Changes to terms</h2>
+    <p>Lappsus reserves the right to modify these terms. Significant changes will be communicated within the app. Continued use of the app after changes implies acceptance of the new terms.</p>
 
-  <h2>Governing law</h2>
-  <p>These terms are governed by Spanish law. Any dispute shall be submitted to the competent courts of Catalonia.</p>
+    <h2>Governing law</h2>
+    <p>These terms are governed by Spanish law. Any dispute shall be submitted to the competent courts of Catalonia.</p>
 
-  <h2>Contact</h2>
-  <p><a href="mailto:hola@lappsus.cat">hola@lappsus.cat</a></p>
-
+    <h2>Contact</h2>
+    <p><a href="mailto:hola@lappsus.cat">hola@lappsus.cat</a></p>
+  </main>
   <footer>
     &copy; 2026 Didac Morales · Lappsus · <a href="/inrium/privacy/en">Privacy Policy</a>
   </footer>

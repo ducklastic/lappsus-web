@@ -5,57 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Termes d'ús — Inrium</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 680px; margin: 60px auto; padding: 0 24px; color: #1d1d1f; line-height: 1.6; }
-    h1 { font-size: 2rem; font-weight: 700; }
-    h2 { font-size: 1.2rem; font-weight: 600; margin-top: 2rem; }
-    .meta { color: #6e6e73; font-size: 0.9rem; margin-bottom: 2rem; }
-    .lang { font-size: 0.85rem; margin-bottom: 2rem; }
-    .lang a { color: #0071e3; text-decoration: none; margin-right: 12px; }
-    .disclaimer { background: #fff3cd; border-left: 4px solid #f0ad00; padding: 16px 20px; border-radius: 4px; margin: 2rem 0; }
-    footer { margin-top: 3rem; font-size: 0.85rem; color: #6e6e73; border-top: 1px solid #e0e0e0; padding-top: 1rem; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      color: #0d0d0d;
+      background: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header { border-bottom: 1px solid #e8e8e8; padding: 24px 40px; }
+    .logo { font-size: 20px; font-weight: 300; letter-spacing: -0.5px; color: #000; text-decoration: none; }
+    .logo::before { content: "["; }
+    .logo::after { content: "]"; }
+    main { max-width: 680px; margin: 60px auto; padding: 0 24px; flex: 1; line-height: 1.7; }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    h2 { font-size: 15px; font-weight: 700; margin-top: 32px; margin-bottom: 8px; }
+    p { font-size: 13px; margin-bottom: 12px; }
+    .meta { color: #999; font-size: 11px; margin-bottom: 32px; }
+    .lang { font-size: 11px; margin-bottom: 24px; display: flex; gap: 12px; }
+    .lang a { color: #ff8012; text-decoration: none; }
+    .lang a:hover { text-decoration: underline; }
+    a { color: #ff8012; }
+    .disclaimer {
+      background: #fff5e6;
+      border-left: 3px solid #ff8012;
+      padding: 16px 20px;
+      margin: 24px 0 32px;
+      font-size: 13px;
+    }
+    footer { border-top: 1px solid #e8e8e8; padding: 20px 40px; font-size: 11px; color: #999; margin-top: 60px; }
+    footer a { color: #ff8012; text-decoration: none; }
   </style>
 </head>
 <body>
-  <div class="lang">
-    <a href="/inrium/terms/ca">Català</a>
-    <a href="/inrium/terms/es">Español</a>
-    <a href="/inrium/terms/en">English</a>
-  </div>
+  <header>
+    <a href="/" class="logo">lappsus</a>
+  </header>
+  <main>
+    <div class="lang">
+      <a href="/inrium/terms/ca">Català</a>
+      <a href="/inrium/terms/es">Español</a>
+      <a href="/inrium/terms/en">English</a>
+    </div>
 
-  <h1>Termes d'ús</h1>
-  <p class="meta">Inrium · Lappsus · Última actualització: abril 2026</p>
+    <h1>Termes d'ús</h1>
+    <p class="meta">Inrium · Última actualització: abril 2026</p>
 
-  <div class="disclaimer">
-    <strong>Avís important:</strong> Inrium és una eina d'ajuda per al seguiment personal del tractament anticoagulant. <strong>No és un dispositiu mèdic homologat i no substitueix el criteri del teu metge o hematòleg.</strong> Totes les decisions sobre el teu tractament les ha de prendre sempre el teu professional de la salut.
-  </div>
+    <div class="disclaimer">
+      <strong>Avís important:</strong> Inrium és una eina d'ajuda per al seguiment personal del tractament anticoagulant. <strong>No és un dispositiu mèdic homologat i no substitueix el criteri del teu metge o hematòleg.</strong> Totes les decisions sobre el teu tractament les ha de prendre sempre el teu professional de la salut.
+    </div>
 
-  <h2>Acceptació dels termes</h2>
-  <p>En descarregar o utilitzar Inrium, acceptes aquests termes d'ús. Si no els acceptes, no facis servir l'app.</p>
+    <h2>Acceptació dels termes</h2>
+    <p>En descarregar o utilitzar Inrium, acceptes aquests termes d'ús. Si no els acceptes, no facis servir l'app.</p>
 
-  <h2>Ús permès</h2>
-  <p>Inrium està dissenyada per ajudar-te a fer un seguiment personal del teu tractament anticoagulant oral (TAO/Sintrom): importar i revisar els teus fulls de TAO, recordar la presa diària, i consultar el teu historial d'INR. L'app és per a ús personal i no comercial.</p>
+    <h2>Ús permès</h2>
+    <p>Inrium està dissenyada per ajudar-te a fer un seguiment personal del teu tractament anticoagulant oral (TAO/Sintrom): importar i revisar els teus fulls de TAO, recordar la presa diària, i consultar el teu historial d'INR. L'app és per a ús personal i no comercial.</p>
 
-  <h2>Limitació de responsabilitat mèdica</h2>
-  <p>La informació mostrada per Inrium (dosis, valors d'INR, estadístiques, recordatoris) és orientativa i <strong>no constitueix consell mèdic</strong>. Lappsus no és responsable de cap decisió mèdica presa basant-se en la informació de l'app. En cas de dubte sobre el teu tractament, consulta sempre el teu metge.</p>
+    <h2>Limitació de responsabilitat mèdica</h2>
+    <p>La informació mostrada per Inrium (dosis, valors d'INR, estadístiques, recordatoris) és orientativa i <strong>no constitueix consell mèdic</strong>. Lappsus no és responsable de cap decisió mèdica presa basant-se en la informació de l'app. En cas de dubte sobre el teu tractament, consulta sempre el teu metge.</p>
 
-  <h2>Exactitud de les dades</h2>
-  <p>El parser d'OCR d'Inrium intenta extreure les dades del teu full de TAO amb la màxima precisió, però pot cometre errors. <strong>Sempre revisa les dades extretes</strong> abans de confirmar-les. Lappsus no es responsabilitza d'errors d'extracció que no hagis revisat i corregit.</p>
+    <h2>Exactitud de les dades</h2>
+    <p>El parser d'OCR d'Inrium intenta extreure les dades del teu full de TAO amb la màxima precisió, però pot cometre errors. <strong>Sempre revisa les dades extretes</strong> abans de confirmar-les. Lappsus no es responsabilitza d'errors d'extracció que no hagis revisat i corregit.</p>
 
-  <h2>Subscripció Inrium+</h2>
-  <p>Inrium ofereix una subscripció opcional (Inrium+) amb funcions addicionals. Les condicions de la subscripció, els preus i la gestió de renovacions es regeixen per les normes de l'App Store d'Apple. Pots cancel·lar en qualsevol moment des de la configuració del teu Apple ID.</p>
+    <h2>Subscripció Inrium+</h2>
+    <p>Inrium ofereix una subscripció opcional (Inrium+) amb funcions addicionals. Les condicions de la subscripció, els preus i la gestió de renovacions es regeixen per les normes de l'App Store d'Apple. Pots cancel·lar en qualsevol moment des de la configuració del teu Apple ID.</p>
 
-  <h2>Propietat intel·lectual</h2>
-  <p>Inrium i tots els seus continguts (codi, disseny, textos, icones) són propietat de Lappsus. No pots copiar, modificar, distribuir ni fer enginyeria inversa de l'app sense autorització expressa.</p>
+    <h2>Propietat intel·lectual</h2>
+    <p>Inrium i tots els seus continguts (codi, disseny, textos, icones) són propietat de Didac Morales · Lappsus. No pots copiar, modificar, distribuir ni fer enginyeria inversa de l'app sense autorització expressa.</p>
 
-  <h2>Modificació dels termes</h2>
-  <p>Lappsus es reserva el dret de modificar aquests termes. Els canvis significatius es comunicaran dins l'app. L'ús continuat de l'app després dels canvis implica l'acceptació dels nous termes.</p>
+    <h2>Modificació dels termes</h2>
+    <p>Lappsus es reserva el dret de modificar aquests termes. Els canvis significatius es comunicaran dins l'app. L'ús continuat de l'app després dels canvis implica l'acceptació dels nous termes.</p>
 
-  <h2>Llei aplicable</h2>
-  <p>Aquests termes es regeixen per la legislació espanyola. Qualsevol disputa se sotmetrà als tribunals competents de Catalunya.</p>
+    <h2>Llei aplicable</h2>
+    <p>Aquests termes es regeixen per la legislació espanyola. Qualsevol disputa se sotmetrà als tribunals competents de Catalunya.</p>
 
-  <h2>Contacte</h2>
-  <p><a href="mailto:hola@lappsus.cat">hola@lappsus.cat</a></p>
-
+    <h2>Contacte</h2>
+    <p><a href="mailto:hola@lappsus.cat">hola@lappsus.cat</a></p>
+  </main>
   <footer>
     &copy; 2026 Didac Morales · Lappsus · <a href="/inrium/privacy/ca">Política de privacitat</a>
   </footer>
