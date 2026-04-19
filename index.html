@@ -20,7 +20,7 @@
     .logo::before { content: "["; }
     .logo::after { content: "]"; }
     .hero-section { padding: 96px 40px 80px; text-align: center; }
-    .hero { font-size: clamp(72px, 13vw, 180px); font-weight: 300; letter-spacing: -4px; color: #000; line-height: 1; margin-bottom: 32px; }
+    .hero-svg { display: block; width: min(900px, 88vw); margin: 0 auto 32px; }
     .tagline { font-size: 15px; line-height: 1.8; color: #555; max-width: 520px; margin: 0 auto; }
     main { max-width: 680px; margin: 0 auto 60px; padding: 0 24px; flex: 1; }
     .divider { border: none; border-top: 1px solid #e8e8e8; margin-bottom: 48px; }
@@ -46,7 +46,15 @@
     <a href="/" class="logo">lappsus</a>
   </header>
   <section class="hero-section">
-    <p class="hero">[lappsus]</p>
+    <svg class="hero-svg" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="[lappsus]">
+      <text x="450" y="168"
+            font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+            font-weight="400"
+            font-size="172"
+            letter-spacing="-4"
+            text-anchor="middle"
+            fill="#000000">[lappsus]</text>
+    </svg>
     <p class="tagline">Fem apps natives per a Apple que respecten la teva privacitat i que funcionen exactament com esperes.</p>
   </section>
 
