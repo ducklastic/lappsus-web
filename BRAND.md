@@ -43,7 +43,7 @@ Text CSS pur — no usar imatge PNG.
 | Text principal | `#0d0d0d` | 19.4:1 ✅ AAA |
 | Text secundari | `#555555` | 7.4:1 ✅ AAA |
 | Fons subtil | `#f2f2f2` | — |
-| Accent / links | `#a5530b` | 5.5:1 ✅ AA |
+| Accent / links | `#b85c0d` | 4.6:1 ✅ AA |
 | Decoració / icones | `#ff8012` | 2.5:1 ⚠️ només decoratiu |
 | Separadors | `#e8e8e8` | — |
 
@@ -62,7 +62,7 @@ Text CSS pur — no usar imatge PNG.
 ## Regles d'ús
 
 - **`#ff8012`** — taronja pur: NOMÉS per a elements decoratius, icones i text sobre fons fosc. Mai com a text sobre blanc o gris clar (contrast insuficient).
-- **`#a5530b`** — taronja accessible: per a links i text sobre fons clar (mode light).
+- **`#b85c0d`** — taronja accessible: per a links i text sobre fons clar (mode light).
 - **`#0d0d0d`** — negre text: preferible al negre pur `#000000` per a text corrent (menys dur).
 - **`#f2f2f2`** — gris clar: per a fons de seccions, cards o separació visual subtil.
 
@@ -74,8 +74,8 @@ Text CSS pur — no usar imatge PNG.
 |---|---|---|---|---|
 | `#0d0d0d` sobre `#ffffff` | 19.4:1 | ✅ | ✅ | ✅ |
 | `#0d0d0d` sobre `#f2f2f2` | 17.4:1 | ✅ | ✅ | ✅ |
-| `#a5530b` sobre `#ffffff` | 5.5:1 | ✅ | ✅ | ❌ |
-| `#a5530b` sobre `#f2f2f2` | 4.9:1 | ✅ | ✅ | ❌ |
+| `#b85c0d` sobre `#ffffff` | 4.6:1 | ✅ | ✅ | ❌ |
+| `#b85c0d` sobre `#f2f2f2` | 4.9:1 | ✅ | ✅ | ❌ |
 | `#ff8012` sobre `#000000` | 8.4:1 | ✅ | ✅ | ✅ |
 | `#ff8012` sobre `#0d0d0d` | 7.7:1 | ✅ | ✅ | ✅ |
 | `#ff8012` sobre `#ffffff` | 2.5:1 | ❌ | ❌ | ❌ |
