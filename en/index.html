@@ -15,7 +15,18 @@
       display: flex;
       flex-direction: column;
     }
-    header { background: #0d0d0d; padding: 20px 40px; }
+    header {
+      background: #0d0d0d;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .lang { display: flex; gap: 12px; font-size: 11px; }
+    .lang a { color: #ff8012; text-decoration: none; }
+    .lang a:hover { text-decoration: underline; }
+    .lang [aria-current="page"] { color: #f2f2f2; }
     .logo { font-size: 20px; font-weight: 300; letter-spacing: -0.5px; color: #ffffff; text-decoration: none; }
     .logo::before { content: "["; }
     .logo::after { content: "]"; }
@@ -39,14 +50,16 @@
     }
     .links a:hover { border-bottom-color: #ba5e10; }
     footer { border-top: 1px solid #e8e8e8; padding: 20px 40px; font-size: 11px; color: #999; }
-    .lang { font-size: 11px; margin-bottom: 24px; display: flex; gap: 12px; }
-    .lang a { color: #ba5e10; text-decoration: none; }
-    .lang a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <header>
     <a href="/" class="logo">lappsus</a>
+    <nav class="lang">
+      <a href="/">Català</a>
+      <a href="/es/">Español</a>
+      <a href="/en/" aria-current="page">English</a>
+    </nav>
   </header>
   <section class="hero-section">
     <svg class="hero-svg" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="[lappsus]">
@@ -61,11 +74,6 @@ fill="#000000">[lappsus]</text>
   </section>
 
   <main>
-    <div class="lang">
-      <a href="/">Català</a>
-      <a href="/es/">Español</a>
-      <a href="/en/">English</a>
-    </div>
     <hr class="divider">
     <h2>Our apps</h2>
 
