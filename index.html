@@ -27,7 +27,7 @@
     h2 { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #999; margin-bottom: 24px; }
     .app { margin-bottom: 40px; }
     .app h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
-    .app p { font-size: 13px; line-height: 1.6; color: #555; margin-bottom: 12px; }
+    .app p, .support p { font-size: 13px; line-height: 1.6; color: #555; margin-bottom: 12px; }
     .links { display: flex; gap: 16px; }
     .links a {
       color: #ba5e10;
@@ -65,13 +65,36 @@ fill="#000000">[lappsus]</text>
       <h3>Inrium</h3>
       <p>Gestiona el teu tractament anticoagulant (TAO/Sintrom) des del mòbil. Importa el full del CAP amb la càmera, rep recordatoris i consulta el teu historial d'INR.</p>
       <div class="links">
-        <a href="/inrium/privacy/ca">Política de privacitat</a>
-        <a href="/inrium/terms/ca">Termes d'ús</a>
+        <a href="/inrium/privacy/ca" data-i18n-path="/inrium/privacy/">Política de privacitat</a>
+        <a href="/inrium/terms/ca" data-i18n-path="/inrium/terms/">Termes d'ús</a>
+      </div>
+    </div>
+    <hr class="divider">
+    <h2>Suport</h2>
+    <div class="support">
+      <p>Si tens qualsevol dubte o problema amb alguna de les nostres apps, escriu-nos i et responem.</p>
+      <div class="links">
+        <a href="mailto:hola@lappsus.cat">hola@lappsus.cat</a>
       </div>
     </div>
   </main>
   <footer>
     &copy; 2026 Didac Morales · Lappsus
   </footer>
+  <script>
+    // The legal pages exist in ca, es and en. The markup carries the Catalan hrefs, so
+    // the links work with JavaScript off; this only points them elsewhere when the
+    // browser actually asks for Spanish or English.
+    (function () {
+      var available = ['ca', 'es', 'en'];
+      var requested = (navigator.languages || [navigator.language || 'ca'])
+        .map(function (tag) { return String(tag).slice(0, 2).toLowerCase(); })
+        .filter(function (code) { return available.indexOf(code) !== -1; })[0];
+      if (!requested || requested === 'ca') { return; }
+      Array.prototype.forEach.call(document.querySelectorAll('[data-i18n-path]'), function (link) {
+        link.setAttribute('href', link.getAttribute('data-i18n-path') + requested);
+      });
+    })();
+  </script>
 </body>
 </html>
